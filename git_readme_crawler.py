@@ -6,6 +6,7 @@ http = urllib3.PoolManager()
 
 url = 'https://github.com/IITGuwahati-AI/Learning-Content-DS-Algo'
 url2 = 'https://github.com/IITGuwahati-AI/Learning-Content-DS-Algo/tree/master/Week%200'
+print("Enter the link to Github Repository")
 url3 = input()
 r = http.request('GET', url3)
 html = r.data
